@@ -1,4 +1,4 @@
-#Live Demo : https://paraschavan02.github.io/Portfolio-Basic/
+#Live Demo : https://vaibhavpatil29.github.io/Portfolio-basic/
 
 #Personal Bio Data Webpage:- A clean, professional, and fully responsive single-page website to showcase personal bio data. Built with modern web technologies and the Bootstrap 5 framework, this project is designed to be easily customizable and serves as a great starting point for a personal portfolio or online resume.
 

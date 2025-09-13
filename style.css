@@ -1,0 +1,64 @@
+/* --- Global & Custom Styles --- */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for nav links */
+}
+
+body {
+    font-family: popins, sans-serif;
+}
+
+.body-gradient {
+    background: linear-gradient(135deg,#170039 0%, #e6f2ff 100%);
+    background-attachment: fixed; /* Makes the gradient stay in place on scroll */
+}
+
+/* --- Profile Picture Custom Style --- */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* Adding a subtle outer glow effect not available in Bootstrap */
+    box-shadow: 0 0 0 7px rgba(0, 123, 255, 0.2);
+}
+
+/* --- Custom Navbar Link Hover Effect --- */
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 8px; /* Extra space for the underline */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cbcccf; /* Bootstrap primary blue */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 60%; /* Width of the underline on hover */
+}
+
+/* --- Custom Badge for Skills & Hobbies --- */
+.skill-badge {
+    background-color: #e9ecef;
+    color: #343a40;
+    padding: 0.6em 1em;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-badge:hover {
+    background-color: #0d6efd; /* Bootstrap primary blue */
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
